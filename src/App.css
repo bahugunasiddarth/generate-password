@@ -1,0 +1,18 @@
+@keyframes floatingGradient {
+  0% {
+    background-position: 0% 50%; /* Initial position */
+  }
+  50% {
+    background-position: 100% 50%; /* Middle position */
+  }
+  100% {
+    background-position: 0% 50%; /* Back to initial position */
+  }
+}
+
+.animate-floating-gradient {
+  background: linear-gradient(45deg, #6ee7b7, #3b82f6, #9333ea);
+  background-size: 400% 400%; /* Larger background to allow the effect */
+  animation: floatingGradient 10s ease infinite; /* Smooth animation */
+  transition: background 2s ease-in-out; /* Smooth transition for other changes */
+}
